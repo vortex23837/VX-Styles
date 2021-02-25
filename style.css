@@ -1,0 +1,869 @@
+ *{
+    margin: 0;
+}
+body{
+    background-color: rgb(88, 88, 88);
+}
+#smallDevice{
+    display: none;
+}
+#imgArrow{
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color: #363636;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    /* margin-top: 0; */
+    border: 0.5px solid black;
+}
+header h1{
+    margin: 0%;
+    line-height: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #0fbcf9;
+}
+main{
+    width: 80%;
+    height: auto;
+    margin-top: 80px !important;
+    /* background-color: #805f5f; */
+    float: left;
+    
+}
+main #mainLogo{
+    color: white;
+    border-left: 4px solid #0fbcf9;
+    padding-left: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    clear: both;
+}
+main span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main span article{
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    margin: auto;
+    /* position: absolute; */
+    background-color: #363636;
+    border: 1px solid black;
+}
+span article h3{
+    float: left;
+    color: orange;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 5px;
+}
+span article #arrow{
+    margin-top: 4px;
+    width: 50px;
+    background: none;
+    border: none;
+    height: 40px;
+    outline: none;
+    float: right;
+    cursor: pointer;
+}
+#buttonArticle{
+    position: relative;
+}
+span article #buttonLogo{
+    background: transparent;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    outline: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid red;
+    font-family: 'Nunito', sans-serif;
+    color: red;
+    font-size: 100%;
+    animation-name: button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes button{
+    0%{
+        color: red;
+        border: 3px solid red;
+    }
+    25%{
+        color: #8e44ad;
+        border: 3px solid #8e44ad;
+    }
+    50%{
+        color: blue;
+        border: 3px solid blue;
+    }
+    70%{
+        color: lime;
+        border: 3px solid lime;
+    }
+    100%{
+        color: red;
+        border: 3px solid red;
+    }
+}
+hr{
+    clear: both;
+    background-color: black;
+    border: none;
+    height: 1px;
+    margin: 0;
+}
+aside{
+    height: auto;
+    width: 10%;
+    float: right;
+    border: 1px solid black;
+    background-color: #363636;
+    text-align: center;
+    margin: 0%;
+}
+aside #topAside{
+    color: #0fbcf9;
+    margin: 0%;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+aside #sections{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    margin: 0;
+    cursor: pointer;
+    padding: 5px;
+    height: 100%;
+    background: none;
+    transition: 0.2s background;
+}
+aside #sections:hover{
+    background: #0fbaf92c;
+}
+#loginArticle{
+    position: relative;
+}
+#socialMediaArticle{
+    position: relative;
+}
+#loginArticle span{
+    top: 50%;
+    width: 80%;
+    height: auto;
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#loginArticle span button{
+    width: 100%;
+    height: 27px;
+    border: 1px solid gray;
+    margin: 3px;
+    outline: none;
+    font-size: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+[type="email"],[type="password"]{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    margin: 3px;
+    height: 27px;
+    border: 1px solid gray;
+    outline: none;
+    cursor: text;
+}
+[type="password"]:hover{
+    background-color: rgb(196, 196, 196);
+}
+[type="email"]:hover{
+    background-color: rgb(196, 196, 196);
+}
+#socialMediaArticle span{
+    top: 50%;
+    width: 80%;
+    height: auto;
+    /* display: flex; */
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#icons{
+    width: 50px;
+    height: 50px;
+    transform: none;
+    transition: 0.3s transform;
+}
+#icons:hover{
+    transform: scale(1.3);
+}
+footer{
+    bottom: 0%;
+    background-color: #363636;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    clear: both;
+    border-top: 0.5px solid black;
+}
+br{
+    clear: both;
+}
+footer #socialMediaFooter{
+    height: 100%;
+    width: 20%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+#footerFbIcon,#footerYtIcon,#footerIgIcon{
+    width: 50px;
+    /* position: absolute; */
+    margin: auto;
+    height: 50px;
+    background: #b6b6b6;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: 0.3s background,0.3s border;
+}
+#footerFbIcon:hover{
+    background: #0984e3;
+    border: 2px solid #0984e3;
+}
+#footerYtIcon:hover{
+    background: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+#footerIgIcon:hover{
+    background: linear-gradient(to bottom , #8e44ad,#e056fd,red,orange,yellow);
+    border: 2px solid #8e44ad;
+}
+#creator{
+    float: right;
+    width: 25%;
+    height: 100%;
+    display: relative;
+    /* justify-content: space-around; */
+}
+#creator h4{
+    position: absolute;
+    margin: auto;
+    bottom: 1%;
+    right: 0%;
+    color: #ffffffd3;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+@media only screen and (max-width:1734px) and (min-width:1400px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    main{
+        width: 85%;
+    }
+    main span article{
+        width: 34%;
+        height: 280px;
+        margin: 5px;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 70px;
+        height: 70px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 12%;
+    }
+    header{
+        height: 90px;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+}
+@media only screen and (max-width:891px) and (min-width:768px){
+    #icons{
+    width: 40px;
+    height: 40px;
+    }
+    footer{
+        bottom: 0%;
+    }
+    main span article{
+        width: 32%;
+    height: 250px;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 40px;
+        height: 40px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:767px) and (min-width:677px){
+    #icons{
+    width: 40px;
+    height: 40px;
+    }
+    main{
+        width: 85%;
+    }
+    main span article{
+        width: 34%;
+        height: 250px;
+        margin: 5px;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 40px;
+        height: 40px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 12%;
+    }
+    header{
+        height: 90px;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+}
+@media only screen and (max-width:676px) and (min-width:628px){
+    #icons{
+    width: 40px;
+    height: 40px;
+    }
+    main{
+        width: 87%;
+    }
+    main span article{
+        width: 36%;
+        height: 250px;
+        margin: 5px;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 40px;
+        height: 40px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 12%;
+    }
+    header{
+        height: 90px;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+}
+@media only screen and (max-width:627px) and (min-width:455px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 50%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 40px;
+        height: 40px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 60%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 70%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 30%;
+    }
+}
+@media only screen and (max-width:454px) and (min-width:384px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 60%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 40px;
+        height: 40px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 60%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 70%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:383px) and (min-width:320px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 70%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 45px;
+        height: 45px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 60%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 80%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 60%;
+        float: none;
+    }
+    #creator h4{
+        position: absolute;
+        margin: auto;
+        bottom: 1%;
+        right: 0%;
+        color: #ffffffd3;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        font-size: small;
+    }
+    #creator{
+        float: none;
+    }
+}
+@media only screen and (max-width:319px) and (min-width:281px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 80%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 45px;
+        height: 45px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 60%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 95%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 60%;
+        float: none;
+    }
+    #creator h4{
+        position: absolute;
+        margin: auto;
+        bottom: 1%;
+        right: 0%;
+        color: #ffffffd3;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        font-size: small;
+    }
+    #creator{
+        float: none;
+    }
+}
+@media only screen and (max-width:280px) and (min-width:245px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 90%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 45px;
+        height: 45px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 65%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 95%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 60%;
+        float: none;
+    }
+    #creator h4{
+        position: absolute;
+        margin: auto;
+        bottom: 1%;
+        right: 0%;
+        color: #ffffffd3;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        font-size: small;
+    }
+    #creator{
+        float: none;
+    }
+}
+@media only screen and (max-width:244px) and (min-width:220px){
+    #icons{
+    width: 60px;
+    height: 60px;
+    }
+    #socialMediaArticle span{
+        width: 90%;
+        display: flex;
+    }
+    main{
+        width: 100%;
+        float: none;
+        
+    }
+    main span{
+        display: block;
+        text-align: center;
+
+    }
+    main span article{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin-top: 5px;
+        display: block;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        width: 45px;
+        height: 45px;
+    }
+    #loginArticle span{
+        width: 85%;
+    }
+    aside{
+        width: 65%;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+    header{
+        height: 90px;
+        width: 95%;
+    }
+    header h1{
+        line-height: 90px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer #socialMediaFooter{
+        width: 70%;
+        float: none;
+    }
+    #creator h4{
+        position: absolute;
+        margin: auto;
+        bottom: 1%;
+        right: 0%;
+        color: #ffffffd3;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        font-size: small;
+    }
+    #creator{
+        float: none;
+    }
+}
+@media only screen and (max-width:219px) and (min-width:103px){
+    #icons{
+        display: none;
+    }
+    #smallDevice{
+        display: block;
+        color: #2ecc71;
+        border: 2px solid #2ecc71;
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+    }
+    #socialMediaArticle span{
+        display: none;
+    }
+    main{
+        display: none;
+    }
+    main span{
+        display: none;
+    }
+    main span article{
+        display: none;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        display: none;
+    }
+    #loginArticle span{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    header h1{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    footer #socialMediaFooter{
+        display: none;
+    }
+    #creator h4{
+        display: none;
+    }
+    #creator{
+        display: none;
+    }
+}
+@media only screen and (max-width:102px){
+    #icons{
+        display: none;
+    }
+    #smallDevice{
+        display: block;
+        color: #2ecc71;
+        border: 2px solid #2ecc71;
+        margin: auto;
+        font-size: medium;
+        font-family: 'Raleway', sans-serif;
+    }
+    #socialMediaArticle span{
+        display: none;
+    }
+    main{
+        display: none;
+    }
+    main span{
+        display: none;
+    }
+    main span article{
+        display: none;
+    }
+    #footerFbIcon,#footerYtIcon,#footerIgIcon{
+        display: none;
+    }
+    #loginArticle span{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    header h1{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    footer #socialMediaFooter{
+        display: none;
+    }
+    #creator h4{
+        display: none;
+    }
+    #creator{
+        display: none;
+    }
+}
