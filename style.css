@@ -19,6 +19,7 @@ header{
     text-align: center;
     /* margin-top: 0; */
     border: 0.5px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.301);
 }
 header h1{
     margin: 0%;
@@ -54,6 +55,7 @@ main span article{
     /* position: absolute; */
     background-color: #363636;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.356);
 }
 span article h3{
     float: left;
@@ -130,6 +132,7 @@ aside{
     background-color: #363636;
     text-align: center;
     margin: 0%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.39);
 }
 aside #topAside{
     color: #0fbcf9;
@@ -246,14 +249,17 @@ footer #socialMediaFooter{
 #footerFbIcon:hover{
     background: #0984e3;
     border: 2px solid #0984e3;
+    box-shadow: 0 0 2px #0984e3, 0 0 4px #0984e3, 0 0 9px #0984e3;
 }
 #footerYtIcon:hover{
     background: #e74c3c;
     border: 2px solid #e74c3c;
+    box-shadow: 0 0 2px #e74c3c, 0 0 4px #e74c3c, 0 0 9px #e74c3c;
 }
 #footerIgIcon:hover{
     background: linear-gradient(to bottom , #8e44ad,#e056fd,red,orange,yellow);
     border: 2px solid #8e44ad;
+    box-shadow: 0 0 2px #8e44ad, 0 0 4px #e056fd, 0 0 8px red, 0 0 9px orange;
 }
 #creator{
     float: right;
@@ -866,4 +872,12 @@ footer #socialMediaFooter{
     #creator{
         display: none;
     }
+}
+::selection{
+    color: #0fbcf9;
+    background-color: black;
+}
+::-moz-selection{
+    color: #0fbcf9;
+    background-color: black;
 }
