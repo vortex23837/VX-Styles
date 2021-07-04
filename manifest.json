@@ -1,0 +1,30 @@
+{
+    "short_name": "Test Web",
+    "name": "Test web N",
+    "theme_color": "blue",
+    "background_color": "powderblue",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "https://1.bp.blogspot.com/-WoGG2lfvnhs/YDjb01risbI/AAAAAAAAALk/k2SN_R2yj7QOUme2nFHuaPg4xWQYyiN7QCLcBGAsYHQ/w381-h384/VXLogo.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "https://1.bp.blogspot.com/-WoGG2lfvnhs/YDjb01risbI/AAAAAAAAALk/k2SN_R2yj7QOUme2nFHuaPg4xWQYyiN7QCLcBGAsYHQ/w381-h384/VXLogo.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "https://1.bp.blogspot.com/-WoGG2lfvnhs/YDjb01risbI/AAAAAAAAALk/k2SN_R2yj7QOUme2nFHuaPg4xWQYyiN7QCLcBGAsYHQ/w381-h384/VXLogo.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "https://1.bp.blogspot.com/-WoGG2lfvnhs/YDjb01risbI/AAAAAAAAALk/k2SN_R2yj7QOUme2nFHuaPg4xWQYyiN7QCLcBGAsYHQ/w381-h384/VXLogo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/?utm_source=launcher"
+  }
